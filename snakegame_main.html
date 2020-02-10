@@ -3,14 +3,48 @@
 
 <head>
     <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Snake Game</title>
     <link rel="stylesheet" href="snake_style.css">
 </head>
 
 <body>
-    <h1>The Snake Game</h1>
-    <h2 class="delta-time-text" id="delta-time-text">Delta Time: </h2>
-    <canvas class="main-canvas"></canvas>
+    <div class="header">
+        <h1>The Snake Game</h1>
+    </div>
+    <div class="main-container">
+
+        <div class="row">
+            <div class="left">
+            </div>
+
+            <div class="middle">
+                <div class="middle-top">
+                    <span>
+                    <h3 id="score-text" class="ui-text score-text">Score: 0</h3>
+                    <h3 id="input-text" class="ui-text input-count-text">Input Queue: 0</h3>
+                    <h3 id="snake-length-text" class="ui-text length-text">Snake Length: 5</h3>
+                    </span>
+                </div>
+                <div class="canvas-container">
+                    <canvas class="main-canvas"></canvas>
+                </div>
+                <!-- <div class="middle-bottom">
+                    <h3 class="length-text">Snake Length: 0</h3>
+                </div> -->
+            </div>
+
+
+            <div class="right">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="footer">
+        <p class="footer-text">Footer</p>
+    </div> -->
 
     <script src="main.js"></script>
 </body>
