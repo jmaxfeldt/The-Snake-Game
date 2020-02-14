@@ -19,7 +19,6 @@
     margin: 0;
     top: -4px;
     right: 5px;
-  
     color: white;
     text-shadow: 0 0 4px white;
   }
@@ -126,11 +125,6 @@
     margin: 0px;
   }
 
-  .popup-container{
-    
-    
-  }
-
   .centered-on-canvas{
     position: absolute;
     left: 50%;
@@ -162,6 +156,15 @@
     background-color: rgba(77, 94, 124, .50);
   }
 
+  .menu-popup{
+    text-align: center;
+    max-width: 400px;
+    padding: 10px;
+    border: 5px solid rgb(255, 102, 0);
+    border-radius: 5px;
+    display: none;
+    background-color: rgba(0, 0, 0, .9);
+  }
   .paused-text{
     text-align: center;
     display: none;
@@ -170,6 +173,21 @@
   .gameover-reason{
     color: white;
   }
+
+  .bg-select-container{
+    display: inline;
+    color: white;
+  }
+
+  .menu-header-text{
+    background-color: rgba(77, 94, 124, .50);
+  }
+  /* .bg-select{
+  }
+
+  .bg-radio{
+    display: inline;
+  } */
 
   /* .row:after{
     content: "";

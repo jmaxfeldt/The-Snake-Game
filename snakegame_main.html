@@ -37,7 +37,33 @@
                     </table>
                 </div>
                 <div id="canvas-container" class="canvas-container">
-                    <canvas class="main-canvas"></canvas>
+                    <canvas id="main-canvas" class="main-canvas"></canvas>
+                    <!-- <canvas id="bg-canvas" class="bg-canvas"></canvas> -->
+
+                    <div id="menu-popup" class="menu-popup centered-on-canvas">
+                        <form class="popup-container">
+                            
+                            <h1 class = "menu-header-text">--Menu--</h1>
+               
+                            <select name="boardsize" id="board-size">
+                                <option value="400 400">Small (400x400)</option>
+                                <option value="600 600">Medium (600x600)</option>
+                                <option value="800 800">Large (800x800)</option>
+                                <option value="800 800">XLarge (1000x800)</option>
+                            </select>
+                            <h3>--Background--</h3>
+                            <div class="bg-select-container">
+                                <input type="radio" class="bg-radio" id="bg-solid-radio" name="bg-select" value="solid">
+                                <label for="bg-solid-radio">None</label>
+
+                                <input type="radio" class="bg-radio" id="bg-grid-radio" name="bg-select" value="grid">
+                                <label for="bg-grid-radio">Grid</label>
+
+                                <input type="radio" class="bg-radio" id="bg-checkered-radio" name="bg-select" value="checkered">
+                                <label for="bg-checkered-radio">Checkered</label>                                
+                            </div>
+                        </form>
+                    </div>
 
                     <div id="gameover-popup" class="gameover-popup centered-on-canvas">
                         <form class="popup-container">
@@ -63,7 +89,7 @@
                     <h3 class="length-text">Snake Length: 0</h3>
                 </div> -->
             </div>
-
+            
 
             <div class="right">
             </div>
@@ -72,8 +98,8 @@
     <!-- <div class="footer">
         <p class="footer-text">Footer</p>
     </div> -->
-
     <script src="main.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
